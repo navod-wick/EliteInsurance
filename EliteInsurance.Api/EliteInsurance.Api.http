@@ -1,0 +1,6 @@
+@EliteInsurance.Api_HostAddress = http://localhost:5072
+
+GET {{EliteInsurance.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
