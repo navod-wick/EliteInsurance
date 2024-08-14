@@ -9,6 +9,7 @@ public static class CompanyConfiguration
     {
         modelBuilder.Entity<Company>(entity =>
         {
+            entity.ToTable("Company");
             entity.HasKey(co => co.Id);
 
             entity.Property(co => co.Name)

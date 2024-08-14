@@ -11,6 +11,6 @@ public class Company
     public required string Country { get; set; }
     public bool Active { get; set; }
     public DateTime InsuranceEndDate { get; set; }
-    public ICollection<Claim>? Claims { get; set; }
+    public virtual ICollection<Claim>? Claims { get; set; }
 }
 

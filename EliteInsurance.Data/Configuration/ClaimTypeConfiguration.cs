@@ -9,6 +9,7 @@ public static class ClaimTypeConfiguration
     {
         modelBuilder.Entity<ClaimType>(entity =>
         {
+            entity.ToTable("ClaimType");
             entity.HasKey(ct => ct.Id);
 
             entity.Property(ct => ct.Name)
